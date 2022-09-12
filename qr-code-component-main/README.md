@@ -26,8 +26,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL [available in this link](https://www.frontendmentor.io/solutions/qr-code-component-flexbox-centering-aUtbF2S3fB)
+
+- Live site URL [available in this link](https://jvmdo.github.io/frontend-mentor-challenges/qr-code-component-main/).
 
 ## My process
 
@@ -46,7 +47,7 @@ CSS3 has a modern approach to center one single element horizontal and verticall
 margin: auto;
 ```
 
-within `flex` containers, which must take its parent's full `height` tho. In this case, I wanted to center the element in the browser's viewport.
+within `flex` containers, which must take its parent's full `height` tho (or `width` depending on flex direction) . In this case, I wanted to center the element in the browser's viewport.
 
 Therefore, I have set
 
@@ -56,7 +57,7 @@ body {
 }
 ```
 
-In order to the centering had make effect.
+in order to the centering had make effect.
 
 ### Useful resources
 
