@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL [in this link.](https://www.frontendmentor.io/solutions/simple-portrait-responsive-card-using-media-query-JX0pzJLYCc)
+- Live Site URL [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/product-preview-card-component/)
 
 ## My process
 

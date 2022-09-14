@@ -26,9 +26,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL [available in this link](https://www.frontendmentor.io/solutions/qr-code-component-flexbox-centering-aUtbF2S3fB)
+- Solution URL [in this link.](https://www.frontendmentor.io/solutions/qr-code-component-flexbox-centering-aUtbF2S3fB)
 
-- Live site URL [available in this link](https://jvmdo.github.io/frontend-mentor-challenges/qr-code-component-main/).
+- Live site URL [in this link](https://jvmdo.github.io/frontend-mentor-challenges/qr-code-component-main/).
 
 ## My process
 
