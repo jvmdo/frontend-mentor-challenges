@@ -11,12 +11,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,8 +26,9 @@ Users should be able to:
 
 #### Mobile
 
-<img src="./screenshots/mobile.jpeg" alt="Screenshot of my mobile solution" width="200px"/> 
-<img src="./screenshots/mobile-state.jpeg" alt="Screenshot of my mobile (with hover state) solution" width="200px"/>
+|                                        Initial state                                        |                                             Hover state (over the image)                                             |
+| :-----------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: |
+| <img src="./screenshots/mobile.jpeg" alt="Screenshot of my mobile solution" width="200px"/> | <img src="./screenshots/mobile-state.jpeg" alt="Screenshot of my mobile (with hover state) solution" width="200px"/> |
 
 #### Desktop
 
@@ -40,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL [in this link.](https://www.frontendmentor.io/solutions/flexbox-for-card-layout-and-grid-for-overlap-elements-cW3zD9rKhL)
+
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/nft-preview-card-component/)
 
 ## My process
 
