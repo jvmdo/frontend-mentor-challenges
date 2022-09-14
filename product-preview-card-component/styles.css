@@ -1,0 +1,135 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* General */
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+}
+
+body {
+  height: 100vh;
+  min-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Mobile-first approach*/
+/* Card content */
+main {
+  width: 32rem;
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  overflow: auto;
+}
+
+section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h4 {
+  font-weight: lighter;
+  letter-spacing: 0.6rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+div h1 {
+  color: hsl(158, 36%, 37%);
+  display: inline;
+}
+
+div p {
+  display: inline;
+  line-height: 1;
+  vertical-align: 50%;
+  text-decoration: line-through;
+  margin-left: 2rem;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+button::before {
+  content: "";
+  background: url(./images/icon-cart.svg) no-repeat left;
+  padding: 1.2rem;
+}
+
+button:hover {
+  background-color: hsl(156, 42%, 18%);
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: calc(768px - 1.5rem);
+  }
+
+  section {
+    margin: auto 1rem;
+  }
+
+  div {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+  }
+}
