@@ -49,31 +49,26 @@ main {
 }
 
 /* Card top image, link, hover state transition */
-.bottom-layer {
-  border-radius: 1rem;
-  grid-area: 1 / 1;
+.wrapper {
+  position: relative;
 }
 
-.top-layer {
+.wrapper a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease;
+  border-radius: 1rem;
+}
+
+.wrapper a:hover::before {
   background: url(./images/icon-view.svg) no-repeat center;
+  background-color: hsl(178, 100%, 50%, 50%);
+}
+
+.wrapper img {
   border-radius: 1rem;
-  grid-area: 1 / 1;
-  transition: background-color 1s ease;
-  pointer-events: auto;
-}
-
-.wrapper:hover {
-  /* Using grid to overlap elements instead of position */
-  display: grid;
-  pointer-events: none;
-}
-
-.top-layer:hover {
-  background-color: hsla(178, 100%, 50%, 50%);
-}
-
-a:hover {
-  color: hsl(178, 100%, 50%);
 }
 
 /* Card text */
@@ -81,7 +76,7 @@ p,
 li {
   font-size: 1.8rem;
   font-weight: lighter;
-  color: hsl(213, 28%, 44%);
+  color: hsl(215, 51%, 70%);
 }
 
 ul {
@@ -109,7 +104,7 @@ footer {
   display: flex;
 }
 
-img[alt*="person"i] {
+img[alt*="Person"] {
   width: 4rem;
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 5rem;

@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-1. `Grid` to overlap elements.
+1. `Grid` to overlap elements\*.
 
 2. Simple `transition` animation between two states.
 
@@ -75,6 +75,8 @@ ul {
 ```
 
 to fill up all the horizontal space, which I didn't liked. I've figure it out later so the previous snippet was removed.
+
+5. **\*UPDATE**: The way I've used `grid` for overlapping led to an accessibility issue, as pointed out by [Vanza Setia's comment](https://www.frontendmentor.io/solutions/flexbox-for-card-layout-and-grid-for-overlap-elements-cW3zD9rKhL#comment-63214b849a934ef2f4628060). I fixed the issue by replacing `grid` to `position` + `::before`.
 
 ### Useful resources
 
