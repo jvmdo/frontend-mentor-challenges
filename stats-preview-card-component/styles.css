@@ -1,0 +1,134 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* General */
+html {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(233, 47%, 7%);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 37.5rem;
+  display: flex;
+}
+
+/* Mobile-first approach */
+/* Card layout content */
+main {
+  width: 28rem;
+  margin: auto;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Image purple overlay */
+div {
+  position: relative;
+}
+
+div picture::before {
+  position: absolute;
+  content: "";
+  background: hsl(277, 64%, 61%, 50%) no-repeat center;
+  height: 100%;
+  width: 100%;
+}
+
+/* Card text and layout*/
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3.2rem 2.2rem;
+  gap: 1rem;
+}
+
+section p {
+  font-size: 1.3rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+
+section ul p {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+section h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+/* Desktop */
+@media screen and (min-width: 65rem) {
+  html {
+    font-size: 12px;
+  }
+
+  /* Card layout content */
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 87rem;
+  }
+
+  /* Image spacing */
+  div {
+    flex: 1;
+  }
+
+  div img {
+    min-height: 100%;
+  }
+
+  /* Card text and layout*/
+  section {
+    flex: 1;
+    text-align: left;
+    margin: 5rem 0rem 4rem 5rem;
+    gap: 2rem;
+  }
+
+  section > h1 {
+    font-size: 3rem;
+    padding-right: 4rem;
+  }
+
+  section > p {
+    font-size: 1.2rem;
+    padding-right: 10rem;
+  }
+
+  section ul {
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+}
