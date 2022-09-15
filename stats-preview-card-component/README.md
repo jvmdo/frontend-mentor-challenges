@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [in this link.](https://www.frontendmentor.io/solutions/flexbox-card-with-image-overlay-using-pseudoelement-L1NwXFSjET)
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/stats-preview-card-component/)
 
 ## My process
 
