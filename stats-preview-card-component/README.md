@@ -49,11 +49,11 @@ How to overlay an image with a foreground color using `::before` pseudo-element.
 
 ```css
 .wrapper {
-  position: absolute;
+  position: relative;
 }
 
 .wrapper picture::before {
-  position: relative;
+  position: absolute;
   content: "";
   background: hsla(50, 50%, 50%, 50%) no-repeat center;
   height: 100%;
@@ -62,3 +62,5 @@ How to overlay an image with a foreground color using `::before` pseudo-element.
 ```
 
 Assuming the responsive `<img>` is inside `<picture>`.
+
+Also, I learned that a `<span>` direct child of an `<ul>` generates HTML issues.

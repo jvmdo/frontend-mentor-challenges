@@ -39,11 +39,11 @@ main {
 }
 
 /* Image purple overlay */
-div {
+main > div {
   position: relative;
 }
 
-div picture::before {
+main div picture::before {
   position: absolute;
   content: "";
   background: hsl(277, 64%, 61%, 50%) no-repeat center;
@@ -67,7 +67,7 @@ section p {
   line-height: 1.7;
 }
 
-section ul p {
+section > div p {
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
   font-weight: lighter;
@@ -75,7 +75,7 @@ section ul p {
   letter-spacing: 0.1rem;
 }
 
-section ul {
+section > div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -100,11 +100,11 @@ section h1 span {
   }
 
   /* Image spacing */
-  div {
+  section > div {
     flex: 1;
   }
 
-  div img {
+  section > div img {
     min-height: 100%;
   }
 
@@ -126,9 +126,13 @@ section h1 span {
     padding-right: 10rem;
   }
 
-  section ul {
+  section > div {
     flex-direction: row;
     gap: 4rem;
     margin-top: 3rem;
+  }
+
+  section > div div {
+    flex-grow: 0;
   }
 }
