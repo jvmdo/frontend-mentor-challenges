@@ -11,6 +11,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 
 ## Overview
 
@@ -45,6 +46,12 @@ Users should be able to:
 
 ### What I learned
 
+**UPDATE**
+
+1. Fix HTML issues caused by `<span>` direct child of `<ul>`.
+
+2. Added `mix-blend-mode` image property to get a closer overlay effect as the design.
+
 How to overlay an image with a foreground color using `::before` pseudo-element. This technique requires the `<picture>` element to be wrapped into a box.
 
 ```css
@@ -64,3 +71,7 @@ How to overlay an image with a foreground color using `::before` pseudo-element.
 Assuming the responsive `<img>` is inside `<picture>`.
 
 Also, I learned that a `<span>` direct child of an `<ul>` generates HTML issues.
+
+### Useful resources
+
+- [blend image property on MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)

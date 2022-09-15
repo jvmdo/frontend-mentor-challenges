@@ -51,6 +51,11 @@ main div picture::before {
   width: 100%;
 }
 
+main div img {
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
 /* Card text and layout*/
 section {
   display: flex;
@@ -130,6 +135,7 @@ section h1 span {
     flex-direction: row;
     gap: 4rem;
     margin-top: 3rem;
+    margin-right: 12rem;
   }
 
   section > div div {
