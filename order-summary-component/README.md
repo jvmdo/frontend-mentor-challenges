@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [in this link.](https://www.frontendmentor.io/solutions/flexbox-card-with-only-one-side-box-shadow-MdxfAnL52I)
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/order-summary-component/)
 
 ## My process
 

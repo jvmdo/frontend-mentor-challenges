@@ -43,8 +43,8 @@ body {
 html {
   font-size: 10px;
   font-family: "Red Hat Display", sans-serif;
-  background: url("./images/pattern-background-mobile.svg") no-repeat center;
-  background-size: cover;
+  background: url("./images/pattern-background-mobile.svg") no-repeat top;
+  background-size: contain;
   background-color: hsl(225, 100%, 94%);
 }
 
@@ -149,6 +149,9 @@ section button:last-of-type:hover {
 @media screen and (min-width: 50rem) {
   html {
     font-size: 11px;
+    background: url("./images/pattern-background-desktop.svg") no-repeat top;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
   }
 
   main {
