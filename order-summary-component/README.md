@@ -66,7 +66,7 @@ a {
 
 #### Background color does not display?
 
-It may because the `background-color` declaration is before the `background-image`. Therefore, put de color after it.
+It maybe because the `background-color` declaration is before the `background-image`. Therefore, put the color after it.
 
 ```css
 html {

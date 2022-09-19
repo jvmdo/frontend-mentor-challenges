@@ -21,10 +21,15 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
+![Screenshot of my mobile solution](./screenshots/mobile.png)
+
+![Screenshot of my desktop solution](./screenshots/desktop.png)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [in this link.](https://www.frontendmentor.io/solutions/background-image-transform-translate--j5Zkl01Eb)
+
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/profile-card-component/)
 
 ## My process
 
