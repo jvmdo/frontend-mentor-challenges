@@ -1,0 +1,132 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Reset setup*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* General */
+html {
+  font-size: 10px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+  background-color: hsl(185, 75%, 39%);
+}
+
+body {
+  min-width: 30rem;
+  max-width: 144rem;
+  min-height: 100vh;
+  line-height: 1.5;
+  display: flex;
+  overflow: clip;
+}
+
+/* Page background */
+.background {
+  position: relative;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background.top {
+  position: absolute;
+  top: 0%;
+  left: -50%;
+  background: url("./images/bg-pattern-top.svg") no-repeat center right;
+  transform: translate(-50%, -55%);
+  opacity: 0.5;
+}
+
+.background.bottom {
+  position: absolute;
+  bottom: 0%;
+  right: -50%;
+  background: url("./images/bg-pattern-bottom.svg") no-repeat center left;
+  transform: translate(50%, 55%);
+  opacity: 0.8;
+}
+
+/* Card content layout */
+main {
+  margin: auto;
+  text-align: center;
+  width: min(100% - 5rem, 320px);
+  border-radius: 1.5rem;
+  background-color: white;
+  font-size: 1.8rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 5rem -1rem hsl(227, 10%, 46%);
+}
+
+main > div {
+  background: url("./images/bg-pattern-card.svg") no-repeat top;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid hsla(0, 0%, 59%, 0.25);
+}
+
+main > div img {
+  border: 5px solid white;
+  border-radius: 10rem;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+main > div div {
+  margin: 8.5rem auto 2rem;
+}
+
+main > footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+/* Card text */
+main div p:first-of-type {
+  font-weight: 700;
+}
+
+main div p:last-of-type {
+  color: hsl(0, 0%, 59%);
+}
+
+main div p span {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+main > div:first-of-type p + p {
+  font-size: 1.5rem;
+}
+
+main footer p + p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 60rem) {
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    width: 400px;
+  }
+
+  main > div {
+    background: url("./images/bg-pattern-card.svg") no-repeat top;
+    background-size: contain;
+  }
+}
