@@ -46,7 +46,34 @@ Users should be able to:
 
 ### What I learned
 
-**UPDATE**
+**UPDATE 2**
+
+1. Added a more responsive way to desktop screens using `font-size: 1vw`.
+
+2. I realize it is also possible to achieve the same result applying `float` instead of `flexbox`.
+
+```css
+/* Card layout content */
+main {
+  /* No flex layout is needed */
+  /* display: flex;
+  flex-direction: row-reverse; */
+  width: 87rem;
+}
+
+/* Image spacing */
+main > div {
+  /* The text wraps around the floated image */
+  float: right;
+}
+
+main > div img {
+  /* Responsive growing */
+  width: 42vw;
+}
+```
+
+**UPDATE 1**
 
 1. Fix HTML issues caused by `<span>` direct child of `<ul>`.
 

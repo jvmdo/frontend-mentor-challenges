@@ -91,10 +91,11 @@ section h1 span {
   color: hsl(277, 64%, 61%);
 }
 
-/* Desktop */
-@media screen and (min-width: 65rem) {
+/* Desktop (begins at 896px)*/
+@media screen and (min-width: 56rem) {
   html {
-    font-size: 12px;
+    /*? This fits just perfectly. Is it just a coincidence? */
+    font-size: 1vw;
   }
 
   /* Card layout content */
@@ -105,11 +106,11 @@ section h1 span {
   }
 
   /* Image spacing */
-  section > div {
+  main > div {
     flex: 1;
   }
 
-  section > div img {
+  main > div img {
     min-height: 100%;
   }
 
@@ -137,8 +138,11 @@ section h1 span {
     margin-top: 3rem;
     margin-right: 12rem;
   }
+}
 
-  section > div div {
-    flex-grow: 0;
+/* Stop growing on 1216px wide screen */
+@media screen and (min-width: 76rem) {
+  html {
+    font-size: 12.16px;
   }
 }
