@@ -112,15 +112,22 @@ article button:hover {
   border: 2px solid hsl(0, 0%, 95%);
 }
 
-/* Top and bottom margin on narrow screens */
-@media screen and (max-width: 27rem) {
+/* Fasten cards width on large screens*/
+@media screen and (min-width: 28.125rem) {
   main {
-    margin-block: 10rem;
+    width: 37rem;
   }
 }
 
-/* Desktop view */
-@media screen and (min-width: 54rem) {
+/* Top and bottom margin on narrow to large screens */
+@media screen and (max-width: 56.25rem) {
+  main {
+    margin-block: 7rem;
+  }
+}
+
+/* Increase card size*/
+@media screen and (min-width: 45rem) {
   html {
     font-size: 12px;
   }
@@ -131,5 +138,13 @@ article button:hover {
 
   button {
     margin-top: 5rem;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 56.25rem) {
+  main {
+    width: min(100% - 8rem, 81rem);
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   }
 }
