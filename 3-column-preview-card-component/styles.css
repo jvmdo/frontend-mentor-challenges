@@ -121,6 +121,10 @@ article button:hover {
 
 /* Desktop view */
 @media screen and (min-width: 54rem) {
+  html {
+    font-size: 12px;
+  }
+
   p {
     margin-top: 0;
   }

@@ -36,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [in this link.](https://your-solution-url.com)
-- Live Site URL: [in this link.](https://your-live-site-url.com)
+- Solution URL: [in this link.](https://www.frontendmentor.io/solutions/1-to-3-columns-grid-responsive-layout-yLjr64IibN)
+
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/3-column-preview-card-component/)
 
 ## My process
 
