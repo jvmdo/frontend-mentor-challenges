@@ -33,8 +33,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [in this link.](https://your-solution-url.com)
-- Live Site URL: [in this link.](https://your-live-site-url.com)
+- Solution URL: [in this link.](https://www.frontendmentor.io/solutions/desktop-card-that-grows-with-vw-unit-Upk7KRiWbU)
+
+- Live Site URL: [in this link.](https://jvmdo.github.io/frontend-mentor-challenges/single-price-grid-component/)
 
 ## My process
 
