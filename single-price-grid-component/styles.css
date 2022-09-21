@@ -1,0 +1,172 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap");
+
+/* Reset config */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* General styles and layout */
+html {
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+body {
+  display: flex;
+  min-width: 37.5rem;
+}
+
+/* Mobile-first approach */
+
+/* Main layout */
+main {
+  margin: auto;
+  width: max(100% - 32.5vw, 30rem);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0rem 1.5rem 3rem -2rem hsla(0, 0%, 0%, 0.6);
+}
+
+/* Common to all cards */
+article {
+  padding: 2rem;
+}
+
+p,
+li,
+button {
+  font-size: 1.3rem;
+}
+
+/* Common to second and third cards */
+article:nth-of-type(n + 2) h1 {
+  margin-bottom: 1rem;
+}
+
+article:nth-of-type(n + 2) {
+  color: white;
+}
+
+/* First card */
+article:nth-of-type(1) h1,
+article:nth-of-type(1) h1 + p {
+  margin-bottom: 1.5rem;
+}
+
+article:nth-of-type(1) {
+  background-color: white;
+}
+
+article:nth-of-type(1) h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+article:nth-of-type(1) h1 + p {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+}
+
+article:nth-of-type(1) p + p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.8;
+}
+
+/* Second card */
+article:nth-of-type(2) {
+  background-color: hsl(179, 62%, 43%);
+}
+
+article:nth-of-type(2) strong {
+  font-size: 3rem;
+}
+
+article:nth-of-type(2) span {
+  vertical-align: super;
+  font-weight: lighter;
+  margin-left: 0.5rem;
+  opacity: 0.5;
+}
+
+article:nth-of-type(2) p + p {
+  font-weight: lighter;
+}
+
+article:nth-of-type(2) button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2.5rem;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 0.5rem 0.5rem 2.5rem -1.5rem hsla(0, 0%, 0%, 0.8);
+}
+
+/* Third card */
+article:nth-of-type(3) {
+  background-color: hsla(179, 62%, 43%, 0.8);
+}
+
+article:nth-of-type(3) li {
+  font-weight: lighter;
+}
+
+/* Desktop layout (800px) */
+@media all and (min-width: 50rem) {
+  html {
+    font-size: 1.25vw;
+  }
+
+  main {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20rem, 30rem));
+  }
+
+  article {
+    padding: 4rem;
+  }
+
+  article:nth-of-type(1) {
+    grid-column: 1 / 3;
+  }
+
+  article:nth-of-type(1) h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Card stops growing at 960px */
+@media all and (min-width: 60rem) {
+  html {
+    font-size: 12px;
+  }
+}
