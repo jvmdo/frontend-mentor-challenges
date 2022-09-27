@@ -1,0 +1,197 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* CSS Reset */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* 
+  Mobile-first approach 
+*/
+
+/* General */
+html {
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+  background: hsl(257, 40%, 49%) url("./images/bg-mobile.svg") no-repeat top /
+    contain;
+  color: white;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-width: 375px;
+}
+
+/* Card styles and layout */
+.card {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 6rem;
+  height: 100%;
+  padding: 4rem;
+  align-items: center;
+}
+
+.card header {
+  grid-area: header;
+}
+
+.card header img {
+  width: 12rem;
+}
+
+.card main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  grid-gap: 6rem;
+}
+
+.card main .hero {
+  display: grid;
+  place-items: center;
+}
+
+.card main .hero img {
+  width: clamp(30rem, 100%, 45rem);
+}
+
+.card main .text {
+  text-align: center;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: minmax(20rem, 52rem);
+  place-items: center;
+}
+
+.card main .text h1 {
+  font-family: "Poppins", serif;
+  font-size: 2.4rem;
+}
+
+.card main .text p {
+  font-size: 1.55rem;
+  color: hsl(0, 0%, 100%, 0.8);
+  line-height: 1.6;
+}
+
+.card main .text button {
+  border: 0;
+  cursor: pointer;
+  font-family: "Poppins", serif;
+  font-size: 1.2rem;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 1rem 7.5rem;
+  border-radius: 5rem;
+  box-shadow: 0.1rem 0.35rem 2rem -0.75rem black;
+}
+
+.card footer {
+  grid-area: footer;
+  justify-self: center;
+}
+
+.card footer .icon {
+  display: inline-block;
+}
+
+.card footer .icon:not(:last-of-type) {
+  margin-right: 1.2rem;
+}
+
+.card footer .icon div {
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.card footer .icon svg {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+/* Hover effects */
+.card main .text button:hover {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.card footer .icon:hover * {
+  fill: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  mix-blend-mode: hard-light;
+}
+
+/* 
+  Desktop version 
+*/
+@media all and (min-width: 60em) {
+  html {
+    font-size: 16px;
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .card {
+    grid-gap: 1rem;
+    padding: 4rem 5rem;
+  }
+
+  .card main {
+    padding-top: 4rem;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 3rem;
+  }
+
+  .card main .hero img {
+    width: 100%;
+  }
+
+  .card main .text {
+    text-align: start;
+    align-self: start;
+    padding-top: 10%;
+  }
+
+  .card main .text p {
+    font-size: 1.06rem;
+  }
+
+  .card main .text button {
+    padding-inline: 5rem;
+    justify-self: start;
+  }
+
+  .card footer {
+    justify-self: end;
+  }
+}
