@@ -119,10 +119,11 @@ body {
   .testimonials {
     grid-template-columns: repeat(auto-fit, minmax(25.6rem, 1fr));
     gap: 2.4rem 3rem;
-    margin-inline: 16rem;
+    margin-inline: calc(4rem + 3vw);
   }
 
   .testimonial:nth-child(1) {
+    background-position: top right 8rem;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
