@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-grid-of-cards-in-different-sizes-teLeqziQRk)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/testimonials-grid-section/)
 
 ## My process
 
@@ -48,3 +48,5 @@ Users should be able to:
 - All the others challenges I completed so far, I had set the paragraph's `font-size` directly in each paragraphs. I realized it's more useful set the size in `body`, then to use `em` unit to change specific font sizes whilst also using `rem`.
 
 - `clamp()` can be a great way to set a variable font-size between a maximum and minimum bounders.
+
+- Use only one `header` and `main` in the entire document. Repeat `section` or `article` instead.
