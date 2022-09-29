@@ -33,8 +33,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/flexbox-wrap-in-order-to-avoid-the-need-of-media-queries-LqQ5VGZqo9)
+
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/fylo-data-storage-component/)
 
 ## My process
 
