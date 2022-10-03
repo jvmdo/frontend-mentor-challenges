@@ -1,0 +1,358 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-skip-ink: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* 
+  General 
+*/
+html {
+  font-size: 10px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+  min-width: 375px;
+  min-height: 100vh;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Text */
+.text {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.text__title {
+  color: hsl(210, 10%, 33%);
+}
+
+h1.text__title {
+  font-size: 1.75em;
+  margin-bottom: 2.4rem;
+}
+
+h2.text__title {
+  font-size: 1.6em;
+  margin-bottom: 2.2rem;
+}
+
+h3.text__title {
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+
+.text__body {
+  color: hsl(201, 11%, 66%);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+/* 
+  Header layout 
+*/
+header {
+  height: 32rem;
+  background-image: url("./images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 12.5rem 0 6.5rem;
+}
+
+/* 
+  Main layout 
+*/
+main {
+  margin: 0 3.2rem;
+}
+
+main section {
+  margin-bottom: 15rem;
+}
+
+/* Buttons style */
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2.4rem 1.6rem;
+  margin-top: 5.4rem;
+  justify-content: center;
+}
+
+.button__ios,
+.button__mac {
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 3.4;
+  width: 31.2rem;
+  border-radius: 5rem;
+}
+
+.button__ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: inset 0 -0.4rem hsl(0, 0%, 0%, 20%),
+    0 0 5rem -2rem hsl(171, 66%, 44%);
+}
+
+.button__ios:hover {
+  background-color: hsla(171, 66%, 44%, 0.8);
+}
+
+.button__mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: inset 0 -0.4rem hsl(0, 0%, 0%, 20%),
+    0 0 5rem -2rem hsl(233, 100%, 69%);
+}
+
+.button__mac:hover {
+  background-color: hsla(233, 100%, 69%, 0.8);
+}
+
+/* Section: keep track */
+.track__features {
+  margin-top: 6.5rem;
+}
+
+.track__features--text .text {
+  margin-top: 5.5rem;
+}
+
+/* Section: access */
+.access img {
+  margin-top: 6.5rem;
+  /* the image has a blank intrinsic space at the bottom */
+  margin-bottom: min(-3rem, -3rem - 5vw);
+}
+
+/* Section: supercharge */
+.supercharge__workflow {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 7.5rem;
+  gap: 6rem 4.5rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.supercharge__workflow--feature {
+  max-width: 40rem;
+}
+
+.supercharge__workflow--feature img {
+  margin-bottom: 4rem;
+}
+
+/* Section: companies */
+.companies {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 6.5rem 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.companies__logo {
+  flex-basis: 15rem;
+}
+
+/* 
+  Footer layout
+*/
+footer {
+  background-color: hsla(201, 11%, 66%, 0.1);
+}
+
+footer .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem 7.5rem;
+  padding: min(5vw + 3.125rem, 6.5rem) min(24vw, 16.5rem);
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  width: 5.6rem;
+}
+
+.links {
+  flex: 1 1 55rem;
+  color: hsl(210, 10%, 33%);
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3.5rem 10rem;
+  justify-content: center;
+}
+
+.links li:not(:last-of-type) {
+  margin-bottom: 3.5rem;
+}
+
+.links a {
+  font-size: 0.9em;
+}
+
+.socials {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+footer a:hover,
+footer a:hover path {
+  color: hsl(171, 66%, 44%);
+  fill: hsl(171, 66%, 44%);
+}
+
+/* 
+  Desktop layout 
+*/
+@media all and (min-width: 1012px) {
+  /*
+    General
+  */
+  body {
+    font-size: clamp(1.8rem, 2vw, 2.4rem);
+  }
+
+  /* 
+    Text 
+  */
+  h1.text__title {
+    font-size: 2em;
+  }
+
+  h2 + p.text__body {
+    font-size: 0.8em;
+  }
+
+  h3 + p.text__body {
+    font-size: 0.75em;
+  }
+
+  /* 
+    Buttons
+  */
+  .button__ios,
+  .button__mac {
+    font-size: 0.72em;
+    line-height: 3;
+    width: 22.5rem;
+  }
+
+  /*
+    Header
+  */
+  header {
+    background-image: url("./images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  /* 
+    Footer
+  */
+  footer {
+    justify-content: start;
+  }
+
+  .links {
+    text-align: start;
+    justify-content: start;
+  }
+
+  .links a {
+    font-size: 0.8em;
+  }
+
+  .links ul {
+    margin: 0 auto;
+  }
+
+  .socials {
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1238px) {
+  /* Main max width */
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* 
+    Section: keep track 
+  */
+  .track__features--image {
+    float: left;
+    margin-left: -6.5rem;
+    margin-right: min(8vw, 11rem);
+  }
+
+  /* Clearfix technique */
+  .track__features::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .track__features--text {
+    border: 1px solid transparent;
+    padding-right: min(10vw, 15rem);
+  }
+
+  .track__features--text .text {
+    text-align: start;
+    margin-right: unset;
+  }
+
+  /* 
+    Footer
+  */
+  .links {
+    padding-left: min(3.5vw, 13.5rem);
+  }
+
+  .links ul {
+    margin: unset;
+  }
+
+  .socials {
+    margin: unset;
+    gap: 2rem;
+  }
+
+  /* Footer max width */
+  footer .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
