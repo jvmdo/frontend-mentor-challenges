@@ -148,7 +148,7 @@ main section {
 .access img {
   margin-top: 6.5rem;
   /* the image has a blank intrinsic space at the bottom */
-  margin-bottom: min(-3rem, -3rem - 5vw);
+  margin-bottom: max(-8rem, -3rem - 5vw);
 }
 
 /* Section: supercharge */
