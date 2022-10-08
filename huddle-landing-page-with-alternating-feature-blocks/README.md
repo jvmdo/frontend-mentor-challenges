@@ -36,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/header-main-footer-fluid-responsive-design-6Rfrna2mX8)
+
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/huddle-landing-page-with-alternating-feature-blocks/)
 
 ## My process
 
@@ -51,7 +52,7 @@ Users should be able to:
 
 ### What I learned
 
-- I tried to apply fluid responsive website using `clamp()` as explained in the resources links.
+- I tried to apply fluid responsive design using `clamp()` as explained in the resources links.
 
 - First time using `vmax` unit.
 
