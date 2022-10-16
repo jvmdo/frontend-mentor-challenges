@@ -37,9 +37,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/simple-landing-page-fluid-design-using-clamp-yLRyc0WknB)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/fylo-landing-page-with-two-column-layout/)
 
 ## My process
 
