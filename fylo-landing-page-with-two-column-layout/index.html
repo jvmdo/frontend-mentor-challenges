@@ -40,7 +40,7 @@
             <form>
               <div class="body__content--form">
                 <input type="email" placeholder="Enter your email" />
-                <span class="error1"><p>Please check your email</p></span>
+                <p class="error1"><span>Please check your email</span></p>
                 <button type="button">Get Started</button>
               </div>
             </form>
@@ -110,7 +110,7 @@
           <form>
             <div class="access__form">
               <input type="email" placeholder="email@example.com" />
-              <span class="error2"><p>Please check your email</p></span>
+              <p class="error2"><span>Please check your email</span></p>
               <button type="button">Get Started For Free</button>
             </div>
           </form>
@@ -185,7 +185,7 @@
         input.addEventListener("invalid", function (event) {
           this.style.setProperty("border-color", "lightcoral");
           document
-            .querySelector(`${this.nodeName} + .error${index + 1}`)
+            .querySelector(`${this.nodeName} + .error${index + 1} span`)
             .style.setProperty("display", "flex");
         })
       );

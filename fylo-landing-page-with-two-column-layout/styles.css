@@ -142,7 +142,7 @@ header .wrapper {
   border: 1px solid hsla(243, 87%, 12%, 0.7);
 }
 
-.body__content--form span {
+.body__content--form p {
   height: fit-content;
   margin-top: -1.6rem;
 }
@@ -300,7 +300,7 @@ main {
   border: 1px solid hsla(243, 87%, 12%, 0.7);
 }
 
-.access__form span {
+.access__form p {
   height: fit-content;
   margin-top: -1rem;
 }
@@ -479,6 +479,7 @@ footer .wrapper {
   .body__content--form {
     flex-direction: row;
     width: 90%;
+    position: relative;
   }
 
   .body__content--form input {
@@ -487,6 +488,12 @@ footer .wrapper {
 
   .body__content--form button {
     flex: 5;
+  }
+
+  /* I need to take this p off the flex container :( */
+  .body__content--form p {
+    position: absolute;
+    top: 5.4rem;
   }
 
   /* Main goes two column */
@@ -558,6 +565,12 @@ footer .wrapper {
     width: clamp(24rem, -35.077rem + 57.69vw, 48rem);
     padding-left: clamp(0.8rem, -3.139rem + 3.85vw, 2.4rem);
     margin-right: 4rem;
+  }
+
+  .access__form p {
+    align-self: start;
+    margin-inline: unset;
+    margin-top: -1.6rem;
   }
 
   .access__form button {
