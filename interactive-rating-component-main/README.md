@@ -39,9 +39,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/passing-custom-styled-radio-buttons-data-through-url-params-mP0WP18Cp1)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/interactive-rating-component-main/)
 
 ## My process
 
