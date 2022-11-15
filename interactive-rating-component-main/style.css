@@ -1,0 +1,160 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  line-height: 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General */
+html {
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(216, 12%, 8%);
+}
+
+body {
+  min-height: 100vh;
+  width: clamp(320px, 100%, 1440px);
+  margin-inline: auto;
+}
+
+main {
+  min-height: inherit;
+  display: grid;
+  place-items: center;
+}
+
+/* 
+  Rating card 
+*/
+.card {
+  padding: clamp(1.5rem, 1.211rem + 1.23vw, 2rem)
+    clamp(1.5rem, 0.922rem + 2.47vw, 2.5rem);
+  max-width: clamp(20.5rem, 17.466rem + 12.94vw, 25.75rem);
+  border-radius: clamp(0.75rem, 0.317rem + 1.85vw, 1.5rem);
+  background-color: hsl(213, 19%, 18%);
+  margin-inline: 1rem;
+}
+
+.circle {
+  width: clamp(2.5rem, 2.211rem + 1.23vw, 3rem);
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  background-color: hsl(213, 19%, 32%);
+  display: grid;
+  place-items: center;
+}
+
+.card-title {
+  margin-top: clamp(1.25rem, 0.672rem + 2.47vw, 2.25rem);
+}
+
+.card-text {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating {
+  margin-top: clamp(1.5rem, 1.211rem + 1.23vw, 2rem);
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating .circle {
+  appearance: none;
+  cursor: pointer;
+}
+
+.rating .circle::before {
+  content: attr(value);
+  color: hsl(217, 12%, 63%);
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.rating .circle:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.rating .circle:checked {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.rating .circle:is(:hover, :checked)::before {
+  color: white;
+}
+
+button {
+  margin-top: clamp(1.5rem, 1.211rem + 1.23vw, 2rem);
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  padding-block: 1rem 0.875rem;
+  border-radius: 100vw;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.accuseInvalidness {
+  outline: 0.2rem dashed crimson;
+  position: relative;
+}
+
+.message {
+  display: none;
+  width: 100%;
+  text-align: end;
+  margin-top: 0.25rem;
+}
+
+.message::before {
+  content: "Please, choose one.";
+  font-size: 0.7rem;
+  color: crimson;
+}
+
+/*  
+  Thank you card
+*/
+
+.thanks {
+  text-align: center;
+}
+
+.illustration img {
+  display: block;
+  padding-top: clamp(0.5rem, 0.356rem + 0.62vw, 0.75rem);
+  margin-inline: auto;
+}
+
+.result {
+  margin-top: clamp(1.5rem, 1.211rem + 1.23vw, 2rem);
+  display: inline-block;
+  font-size: small;
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(25, 97%, 53%, 0.075);
+  padding: 0.75rem;
+  line-height: 0;
+  border-radius: 100vw;
+}

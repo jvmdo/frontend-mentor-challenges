@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div class="circle">
+          <img src="images/icon-star.svg" alt="" />
+        </div>
+        <h1 class="card-title">How did we do?</h1>
+        <p class="card-text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form action="thank-you.html" novalidate>
+          <ul class="rating">
+            <li>
+              <input class="circle" type="radio" value="1" name="rating" />
+            </li>
+            <li>
+              <input class="circle" type="radio" value="2" name="rating" />
+            </li>
+            <li>
+              <input class="circle" type="radio" value="3" name="rating" />
+            </li>
+            <li>
+              <input class="circle" type="radio" value="4" name="rating" />
+            </li>
+            <li>
+              <input
+                required
+                class="circle"
+                type="radio"
+                value="5"
+                name="rating"
+              />
+            </li>
+          </ul>
+          <span class="message"></span>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
