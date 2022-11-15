@@ -36,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/curved-background-based-on-wrapper-and-pseudoelements-OJZZDQBvee)
+
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/huddle-landing-page-with-curved-sections/)
 
 ## My process
 
