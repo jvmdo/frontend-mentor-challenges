@@ -1,0 +1,224 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* General */
+html {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: hsl(0, 100%, 74%) url("images/bg-intro-mobile.png") top center /
+    auto 100vh;
+}
+
+body {
+  min-height: 100vh;
+  /* Max desktop content's width (1120px) + padding on each side (48px) */
+  width: clamp(20rem, 100%, 76rem);
+  margin-inline: auto;
+}
+
+main {
+  min-height: inherit;
+}
+
+.container {
+  min-height: inherit;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  gap: 4rem 3rem;
+  padding-block: 6rem 4rem;
+  padding-inline: clamp(0.75rem, -3rem + 18.75vw, 3rem);
+}
+
+/* 
+  Intro 
+*/
+.intro h1 {
+  font-size: clamp(1.875rem, 1.007rem + 3.7vw, 3.375rem);
+  max-width: 16ch;
+  line-height: 1.1;
+  margin-inline: auto;
+  margin-bottom: 1.75rem;
+}
+
+.intro p {
+  width: clamp(16ch, 100%, 52ch);
+  margin-inline: auto;
+}
+
+/* 
+  Trial
+*/
+.trial {
+  max-width: 33.75rem;
+}
+
+.trial-price {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem hsla(0, 0%, 0%, 0.15);
+  padding-block: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.trial-price p {
+  max-width: 18ch;
+  margin-inline: auto;
+}
+
+/* 
+  Form
+*/
+.trial-form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem hsla(0, 0%, 0%, 0.15);
+}
+
+.trial-form input {
+  width: calc(100% - 2.5rem);
+  padding: 0.875rem 1.25rem;
+  border: 1px solid hsla(249, 10%, 26%, 0.25);
+  border-radius: 0.25rem;
+  color: hsl(249, 10%, 26%);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.trial-form input.accuseInvalidness {
+  border: 2px solid hsl(0, 100%, 74%);
+  margin-bottom: 2rem;
+}
+
+.trial-form input:focus {
+  border-color: hsl(249, 10%, 26%);
+}
+
+.trial-form input:valid:not(:focus, :placeholder-shown) {
+  border-color: hsl(154, 59%, 51%);
+}
+
+.trial-form input:invalid:not(:focus, :placeholder-shown) {
+  border-color: hsl(0, 100%, 74%);
+}
+
+.trial-form label {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.trial-form .errorMessage {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.trial-form input.accuseInvalidness + .errorMessage::before {
+  content: url(images/icon-error.svg);
+  height: 24px;
+  position: absolute;
+  right: clamp(1rem, 0.711rem + 1.23vw, 1.5rem);
+  top: calc(50% - 1rem);
+  transform: translateY(-50%);
+}
+
+.trial-form input.accuseInvalidness + .errorMessage::after {
+  content: attr(data-field) " must not be empty";
+  font-size: x-small;
+  font-weight: 500;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  text-align: end;
+  position: absolute;
+  width: 16rem;
+  bottom: 1rem;
+  right: 0;
+}
+
+.trial-form
+  input[type="email"]:not(:placeholder-shown).accuseInvalidness
+  + .errorMessage::after {
+  content: "Looks like this is not an email";
+}
+
+.trial-form button {
+  width: calc(100%);
+  padding-block: 1.125rem;
+  border-radius: 0.25rem;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  line-height: 1;
+  box-shadow: inset 0 -0.25rem hsl(154, 59%, 42%);
+  transition: box-shadow 0.05s cubic-bezier(1, 0, 0, 1);
+  position: relative;
+  margin-bottom: 0.625rem;
+}
+
+.trial-form button:active {
+  top: 2px;
+  box-shadow: inset 0 -0.05rem hsl(154, 59%, 42%);
+}
+
+.trial-form button:hover {
+  background-color: hsl(154, 59%, 60%);
+}
+
+.trial-terms {
+  font-size: x-small;
+  color: hsl(246, 25%, 77%);
+  max-width: 36ch;
+  margin-inline: auto;
+}
+
+.trial-terms a {
+  color: hsl(0, 100%, 74%);
+}
+
+/* 
+  Desktop layout 
+*/
+@media (min-width: 64em) {
+  html {
+    background-image: url("images/bg-intro-desktop.png");
+  }
+
+  .container {
+    text-align: start;
+    grid-template-columns: 9fr 10fr;
+    padding-block: 0;
+  }
+
+  .intro h1 {
+    font-size: clamp(2.813rem, 1.428rem + 2.16vw, 3.375rem);
+  }
+
+  .trial-price p,
+  .trial-terms {
+    max-width: none;
+    text-align: center;
+  }
+}
