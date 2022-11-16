@@ -37,9 +37,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/form-error-messages-based-on-pseudoclasses-combined-a-bit-of-js-uxbQlR1sG9)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/intro-component-with-signup-form/)
 
 ## My process
 
@@ -58,7 +58,7 @@ Users should be able to:
 
 - How to use `:valid`, `:invalid`, `:not()`, `:focus`, `:placeholder-shown`, `<span>`, pseudo-elements and 1 class to style the appearance and behavior of a form.
 
-- The `<label>` does not get the size of its input child. We must explicitly set its width:
+- The `<label>` does not get the size of its `<input>` child. We must explicitly set its width:
 
   ```css
   label {
