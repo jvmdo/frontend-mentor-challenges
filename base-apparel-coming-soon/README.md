@@ -36,9 +36,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/programmatically-setting-css-rules-properties-on-form-submit-HTWPzqEMW1)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/base-apparel-coming-soon/)
 
 ## My process
 
