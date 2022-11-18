@@ -38,9 +38,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/hiddenvisible-box-transition-on-button-click-sstU8DeJPI)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/article-preview-component/)
 
 ## My process
 
