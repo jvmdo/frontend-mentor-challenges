@@ -1,0 +1,199 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+summary {
+  list-style-type: none;
+}
+
+/* General */
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(238, 29%, 16%);
+  background: white
+    linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat
+    top left / cover;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 20rem;
+  font-size: 0.75rem;
+}
+
+main {
+  min-height: inherit;
+  display: grid;
+  place-items: center;
+}
+
+/* Card */
+.card {
+  background-color: white;
+  border-radius: 1.25rem;
+  width: clamp(18.5rem, 100% - 3rem, 36rem);
+  padding: 0 clamp(1rem, -1.909rem + 14.55vw, 1.5rem) 3rem;
+  margin: 12rem clamp(0.75rem, -3.614rem + 21.82vw, 1.5rem) 3rem;
+  transition: 0.25s;
+}
+
+.hero {
+  text-align: center;
+  height: clamp(5rem, -2.463rem + 31.84vw, 9rem);
+  /* position: relative; */
+  isolation: isolate;
+}
+
+.hero img {
+  width: clamp(15rem, -3.657rem + 79.6vw, 25rem);
+}
+
+.illustration {
+  transform: translateY(-60%);
+}
+
+.shadow {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.faq h1 {
+  margin: 2.5rem 0 1.5rem;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+details .question {
+  font-size: 1.1em;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+details[open] .question {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+details .question:is(:hover, :focus-visible) {
+  color: hsl(14, 88%, 65%);
+}
+
+/* Lil arrow */
+details .question::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/icon-arrow-down.svg") no-repeat right top 0.25rem;
+  transition: transform 0.25s ease-in-out;
+}
+
+details[open] .question::before {
+  transform: scale(1, -1);
+}
+
+details .answer {
+  display: inline-block;
+  padding-right: 1rem;
+}
+
+.divider {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  margin-block: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 64em) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  main {
+    overflow: hidden;
+  }
+
+  .card {
+    display: grid;
+    grid-auto-flow: column;
+    width: 58rem;
+    min-height: 32rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero {
+    text-align: unset;
+    height: unset;
+    position: relative;
+  }
+
+  /* @box */
+  .hero::after {
+    background: url("images/illustration-box-desktop.svg") no-repeat center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 12rem;
+    aspect-ratio: 1 / 1;
+    transform: translate(-48.5%, 112.5%);
+  }
+
+  .hero picture {
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero .illustration {
+    width: 29rem;
+    transform: translate(-17%, 25%);
+  }
+
+  /* Shadow background container */
+  .hero picture:last-of-type {
+    width: 100%;
+    position: relative;
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+
+  .hero .shadow {
+    inset: 0;
+    transform: scale(2.5) translateX(-31.5%);
+  }
+
+  .faq {
+    padding: 4rem 5rem 4rem 0;
+  }
+
+  .faq h1 {
+    text-align: start;
+    margin: 0 0 2rem;
+  }
+
+  .faq details {
+    width: 22rem;
+  }
+
+  details .answer {
+    padding-right: 0.5rem;
+  }
+}
