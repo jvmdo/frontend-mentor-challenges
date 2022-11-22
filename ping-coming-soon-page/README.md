@@ -40,9 +40,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/simple-responsive-page-media-queryfree-ft-fluid-layout-and-flexbox-g-QS2jAQVi)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/ping-coming-soon-page/)
 
 ## My process
 
