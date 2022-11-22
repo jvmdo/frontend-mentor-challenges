@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Ping coming soon page</title>
+  </head>
+  <body>
+    <header class="container">
+      <img src="images/logo.svg" alt="Ping." />
+    </header>
+
+    <main class="container">
+      <h1>We are launching <span>soon!</span></h1>
+      <p>Subscribe and get notified</p>
+      <form method="post" novalidate>
+        <label aria-label="Your email address">
+          <input
+            required
+            aria-required="true"
+            type="email"
+            name="email"
+            placeholder="Your email address"
+          />
+          <span class="input-error" aria-live="polite"></span>
+        </label>
+        <button>Notify Me</button>
+      </form>
+      <img src="images/illustration-dashboard.png" alt="" aria-hidden="true" />
+    </main>
+
+    <footer class="container">
+      <ul class="socials">
+        <li>
+          <a href="#" aria-label="Visit our Facebook profile">
+            <svg aria-hidden="true">
+              <use href="images/symbol-icons.svg#facebook" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visit our Twitter profile">
+            <svg aria-hidden="true">
+              <use href="images/symbol-icons.svg#twitter" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visit our Instagram profile">
+            <svg aria-hidden="true">
+              <use href="images/symbol-icons.svg#instagram" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span>&copy; Copyright Ping. All rights reserved.</span>
+    </footer>
+  </body>
+</html>

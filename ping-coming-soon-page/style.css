@@ -1,0 +1,189 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General */
+html {
+  font-family: "Libre Franklin", Helvetica, sans-serif;
+  color: hsl(209, 33%, 12%);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 20rem;
+}
+
+.container {
+  max-width: 43.5rem;
+  margin-inline: auto;
+  text-align: center;
+  padding-inline: 1.75rem;
+}
+
+/* 
+  Header 
+*/
+header.container {
+  margin-top: 5.5rem;
+}
+
+/*
+  Main 
+*/
+main.container {
+  margin-top: clamp(2.75rem, 2.317rem + 1.85vw, 3.5rem);
+}
+
+main h1 {
+  font-size: clamp(1.25rem, 0.383rem + 3.7vw, 2.75rem);
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+main p {
+  font-size: clamp(0.688rem, 0.399rem + 1.23vw, 1.188rem);
+  padding-top: 1.5rem;
+}
+
+main form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.625rem 1.25rem;
+  font-size: clamp(0.688rem, 0.507rem + 0.77vw, 1rem);
+  padding-inline: calc(-1 * clamp(-1.063rem, -1.676rem + 2.62vw, 0rem));
+  padding-top: clamp(2rem, 1.711rem + 1.23vw, 2.5rem);
+}
+
+form label {
+  flex: 2.1 1 26.25rem;
+  max-width: 26.25rem;
+  text-align: start;
+}
+
+label input {
+  width: 100%;
+  height: clamp(2.5rem, 1.922rem + 2.47vw, 3.5rem);
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100vw;
+  padding-inline: 2rem;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 59%);
+}
+
+form button {
+  height: clamp(2.5rem, 1.922rem + 2.47vw, 3.5rem);
+  border-radius: 100vw;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0.5rem 1rem -0.4rem hsla(223, 87%, 63%, 0.75);
+  flex: 1 1 12.5rem;
+  max-width: 26.25rem;
+}
+
+button:is(:hover, :focus) {
+  background-color: hsl(223, 87%, 68%);
+}
+
+main img {
+  padding-top: clamp(4.5rem, 3.633rem + 3.7vw, 6rem);
+  margin-bottom: calc(-1 * clamp(-7.5rem, -9.233rem + 7.4vw, -4.5rem));
+}
+
+/* 
+  Footer 
+*/
+footer.container {
+  margin-bottom: clamp(2.25rem, 1.817rem + 1.85vw, 3rem);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.875rem;
+}
+
+.socials a {
+  display: inline-block;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100%;
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.socials svg {
+  fill: hsl(223, 87%, 63%);
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socials a:is(:hover, :focus-within) {
+  background-color: hsl(223, 87%, 63%);
+}
+
+.socials a:is(:hover, :focus-within) svg {
+  fill: white;
+}
+
+footer span {
+  display: inline-block;
+  padding-top: 1.75rem;
+  font-size: 0.6875rem;
+  color: hsl(0, 0%, 59%);
+}
+
+/* 
+  Input error warning
+*/
+.input-error {
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: 600;
+  color: hsl(354, 100%, 66%);
+  max-width: 0;
+  padding-left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.active.input-error {
+  max-width: 100%;
+  padding-left: clamp(1rem, -4.818rem + 29.09vw, 2rem);
+}
