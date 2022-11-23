@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="mark-read">
+          <h1>
+            Notifications
+            <span class="number" data-value="3">3</span>
+          </h1>
+          <button type="button">Mark all as read</button>
+        </div>
+
+        <ul class="notifications">
+          <li class="notification" data-read="false">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-mark-webber.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Mark Webber</strong>
+              </a>
+              reacted to your recent post
+              <a href="#" class="notification-text__link" data-type="post">
+                My first tournament today!
+              </a>
+            </p>
+            <p class="notification-date">1m ago</p>
+          </li>
+          <li class="notification" data-read="false">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-angela-gray.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Angela Gray</strong>
+              </a>
+              followed you
+            </p>
+            <p class="notification-date">5m ago</p>
+          </li>
+          <li class="notification" data-read="false">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-jacob-thompson.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Jacob Thompson</strong>
+              </a>
+              has joined your group
+              <a href="#" class="notification-text__link" data-type="group">
+                Chess Club
+              </a>
+            </p>
+            <p class="notification-date">1 day ago</p>
+          </li>
+          <li class="notification" data-read="false">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-rizky-hasanuddin.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">
+                  Rizky Hasanuddin
+                </strong>
+              </a>
+              sent you a private message
+            </p>
+            <p class="notification-date">5 days ago</p>
+            <a href="#" class="notification-text__link" data-type="message">
+              <p>
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </a>
+          </li>
+          <li class="notification" data-read="true">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-kimberly-smith.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Kimberly Smith</strong>
+              </a>
+              commented on your picture
+              <a href="#" class="notification-text__link" data-type="comment">
+                <img src="assets/images/image-chess.webp" alt="User photo" />
+              </a>
+            </p>
+            <p class="notification-date">1 week ago</p>
+          </li>
+          <li class="notification" data-read="true">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-nathan-peterson.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Nathan Peterson</strong>
+              </a>
+              reacted to your recent post
+              <a href="#" class="notification-text__link" data-type="post">
+                5 end-game strategies to increase your win rate
+              </a>
+            </p>
+            <p class="notification-date">2 weeks ago</p>
+          </li>
+          <li class="notification" data-read="true">
+            <img
+              class="notification-picture"
+              src="assets/images/avatar-anna-kim.webp"
+              alt="User Picture"
+            />
+            <p class="notification-text">
+              <a href="#">
+                <strong class="notification-text__name">Anna Kim</strong>
+              </a>
+              left the group
+              <a href="#" class="notification-text__link" data-type="group"
+                >Chess Club</a
+              >
+            </p>
+            <p class="notification-date">2 weeks ago</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap");
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* General */
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsla(210, 60%, 98%, 0.5);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 20rem;
+}
+
+/* main {
+  min-height: inherit;
+  display: grid;
+  place-items: center;
+} */
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  padding-inline: clamp(1rem, 0.422rem + 2.47vw, 2rem);
+  padding-block: clamp(1.5rem, 1.067rem + 1.85vw, 2.25rem);
+  max-width: 45.5rem;
+  margin-inline: auto;
+  margin-block: clamp(0rem, -4.86rem + 13.45vw, 3.75rem)
+    clamp(0rem, -7.29rem + 20.18vw, 5.625rem);
+}
+
+/* Text */
+h1 {
+  font-size: clamp(1.25rem, 1.106rem + 0.62vw, 1.5rem);
+}
+
+a,
+p,
+strong {
+  font-size: clamp(0.875rem, 0.803rem + 0.31vw, 1rem);
+}
+
+h1,
+strong {
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+}
+
+a {
+  font-weight: 600;
+}
+
+a[data-type="group"] {
+  color: hsl(219, 85%, 26%);
+}
+
+p {
+  font-weight: 400;
+  color: hsl(219, 12%, 42%);
+}
+
+/* Hover states */
+strong:is(:hover, :focus) {
+  color: hsl(219, 85%, 26%);
+}
+
+a:is(:hover, :focus) {
+  font-weight: 800;
+  color: hsl(219, 85%, 26%);
+}
+
+a img:is(:hover, :focus-visible) {
+  color: hsl(211, 68%, 94%);
+  filter: drop-shadow(2px 2px) drop-shadow(-2px -2px) drop-shadow(2px -2px)
+    drop-shadow(-2px 2px);
+}
+
+/* Images */
+img {
+  width: clamp(2.375rem, 2.122rem + 1.08vw, 2.813rem);
+}
+
+a img {
+  width: clamp(2.063rem, 1.81rem + 1.08vw, 2.5rem);
+}
+
+/* Number and Mark button */
+.mark-read {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  padding: 0.075rem 0.65rem;
+  border-radius: 0.5rem;
+  font-size: 0.9em;
+  margin-left: 0.5rem;
+}
+
+.number[data-value="0"] {
+  visibility: hidden;
+}
+
+button {
+  color: hsl(219, 12%, 42%);
+  font-size: clamp(0.875rem, 0.803rem + 0.31vw, 1rem);
+}
+
+button:is(:hover, :focus) {
+  color: hsl(219, 85%, 26%);
+  font-weight: 600;
+}
+
+/* Notifications */
+.notifications {
+  margin-top: clamp(1.5rem, 1.211rem + 1.23vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  --float-space: calc(
+    clamp(2.375rem, 2.122rem + 1.08vw, 2.813rem) +
+      clamp(0.875rem, 0.731rem + 0.62vw, 1.125rem)
+  );
+}
+
+.notification {
+  border-radius: 0.5rem;
+  padding: clamp(1rem, 0.856rem + 0.62vw, 1.25rem);
+}
+
+/* Used in JavaScript for querying purposes */
+.notification[data-read="false"] {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.notification-picture {
+  float: left;
+  margin-right: clamp(0.875rem, 0.731rem + 0.62vw, 1.125rem);
+}
+
+.notification-text {
+  margin-left: var(--float-space);
+}
+
+/* Tiny ball after text */
+.notification-text::after {
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: crimson;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-left: 0.2rem;
+}
+
+.notification[data-read="false"] .notification-text::after {
+  content: "";
+}
+
+.notification-text__link[data-type="message"] {
+  display: inline-block;
+  border: 1px solid hsl(205, 33%, 90%);
+  border-radius: 0.25rem;
+  clear: both;
+  font-size: 0.8rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: var(--float-space);
+}
+
+.notification-text__link[data-type="message"]:is(:hover, :focus) {
+  background-color: hsl(211, 68%, 94%);
+  border-color: hsl(211, 68%, 94%);
+}
+
+.notification-text__link[data-type="comment"] {
+  float: right;
+  margin: 0.25rem;
+}
+
+.notification-date {
+  color: hsl(219, 14%, 63%);
+  font-size: 0.8em;
+  margin-top: clamp(0.125rem, 0.053rem + 0.31vw, 0.25rem);
+  margin-left: var(--float-space);
+}
