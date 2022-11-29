@@ -43,9 +43,9 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/magical-fluid-grid-and-formatting-using-cleave-library-XELfgUhZbK)
 
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://jvmdo.github.io/frontend-mentor-challenges/interactive-card-details-form/)
 
 ## My process
 
