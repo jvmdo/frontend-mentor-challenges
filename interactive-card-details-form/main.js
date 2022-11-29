@@ -169,6 +169,9 @@ function activateErrors() {
 }
 
 async function requestFormPost(data, url = window.location.pathname) {
+  return setTimeout(() => true, 250);
+
+  //! It is not allowed to make a POST request on a GitHub page
   const response = await fetch(url, {
     method: "POST",
     mode: "no-cors",

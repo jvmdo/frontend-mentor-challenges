@@ -13,7 +13,6 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [Comments](#comments)
-- [Run it on your machine](#run-it-on-your-machine)
 
 ## Overview
 
@@ -97,6 +96,4 @@ Users should be able to:
 
 - The credit card number pattern differs depending on the card flag. The 0000 0000 0000 0000 pattern is owned by Visa and MasterCard for example.
 
-## Run it on your machine
-
-It need a local server to work properly since because of the form post request. "Live preview" VS Code extension is sufficient for that task.
+- I changed the form post request method to always return true because it is not possible to make a this type of request on a GitHub Page.
