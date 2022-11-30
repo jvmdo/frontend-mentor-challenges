@@ -68,13 +68,7 @@ Users should be able to:
 
 - How to update the UI according to the values typed in the fields in real-time.
 
-### Continued development
-
-- How to import Cleave?
-
-- Custom properties and methods for HTMLElements on JavaScript
-
-- Fetch requests
+- In order to use the ES6 `import` keyword, the Cleave build dist must be the `esm` one. Also, the `main.js`'s `type="module"` must be set.
 
 ### Useful resources
 
@@ -97,3 +91,5 @@ Users should be able to:
 - The credit card number pattern differs depending on the card flag. The 0000 0000 0000 0000 pattern is owned by Visa and MasterCard for example.
 
 - I changed the form post request method to always return true because it is not possible to make a this type of request on a GitHub Page.
+
+- Due to ES6 module usage, this page only works properly when running on a (local) server.
