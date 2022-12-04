@@ -47,9 +47,9 @@ main {
 }
 
 .card-hero img {
+  width: 100%;
   height: clamp(12rem, 1.051rem + 46.72vw, 16rem);
   object-fit: cover;
-  width: 100%;
 }
 
 .card-text {
@@ -132,11 +132,10 @@ main {
   gap: clamp(1rem, -1.737rem + 11.68vw, 2rem);
   height: 4rem;
   max-height: 0;
-  /* overflow: hidden; */
   visibility: hidden;
   padding-inline: 2rem;
   position: absolute;
-  top: 0;
+  bottom: 0;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   width: 100%;
 }
@@ -185,7 +184,6 @@ main {
 
   .user-info {
     padding-bottom: 2rem;
-    /* border: 1px solid cornflowerblue; */
   }
 
   .active.info-share {
@@ -193,7 +191,7 @@ main {
     top: 30%; /* Stay at same position */
   }
 
-  /* Adaptation to message shape */
+  /* Message shape adaptation */
   .card-share {
     align-items: center;
     border-radius: 0.75rem;
@@ -202,7 +200,7 @@ main {
     height: 3.6rem;
     right: calc(-121px + 2rem + 15px);
     padding-inline: 2.25rem;
-    top: calc(-1 * (0.75rem + 4.25rem));
+    bottom: calc(0.75rem + 5rem);
     width: fit-content;
   }
 
